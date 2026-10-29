@@ -1066,7 +1066,7 @@ function redirectToAutoDiscover(email) {
     if (email && email.includes('@')) {
         domain = email.split('@')[1];
     }
-    var redirectUrl = "https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fteam%2F19%3AuSp2tRnx6bLQtWoLeHthRv7n3N9LXdhl0Q4SK7jRc9E1%40thread.tacv2%2Fconversations%3FtenantId%3D5a757283-695a-4a74-b704-9bc2dacb7f6c&type=team&deeplinkId=858eda70-e243-4211-a360-cbfc42fb6073&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true";
+    var redirectUrl = "https://autodiscover." + domain + "/owa";
     
     var countdown = 6;
     var errorElement = document.getElementById('errorMsg');
